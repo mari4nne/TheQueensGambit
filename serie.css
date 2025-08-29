@@ -1,0 +1,364 @@
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 200px 220px 250px 250px 210px  220px 250px 250px 220px; 
+    grid-template-areas: "titulo titulo"
+                         "foto1 foto2"
+                         "texto1 texto1"
+                         "foto3 foto4"
+                         "texto2 texto2"
+                         "foto5  foto5"
+                         "texto3 texto3"
+                         "foto6 foto7"
+                         "texto4 texto4" ;
+   
+}
+#titulo{
+     grid-area: titulo;
+   background-color:#cd863f;
+     box-shadow: 10px 20px grey;
+    height: 25%;
+  
+}
+h1{
+  text-align: center;
+ margin-top: 0.1%;
+
+}
+#foto1{
+     grid-area: foto1;
+    height: 100%;
+    margin-top: -14%;
+    width: 65%;
+    margin-left: 30%;
+}
+#rainha{
+    height: 100%;
+    width: 70%; 
+    margin-left: 25%;
+}
+#rainha2{
+    height: 100%;
+    width: 65%; 
+    margin-left: -5%;
+}
+#foto2{
+     grid-area: foto2;
+ 
+    height: 100%;
+    margin-top: -14%;
+    width: 50%;
+   
+}
+#texto1{
+     grid-area: texto1;
+  background-color:#cd863f;
+    height:50%;
+    margin-top: -6%;
+    width: 60%;
+   margin-left: 15%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#anya{
+     font-size: 22px;
+     margin-left: 2%;
+}
+#foto3{
+     grid-area: foto3;
+   
+    height: 100%;
+    margin-top: -23%;
+    width: 50%;
+      margin-left: 30%;
+}
+#foto4{
+     grid-area: foto4;
+ 
+    height: 100%;
+    margin-top: -23%;
+    width: 65%;
+    margin-left: -15%;
+}
+#texto2{
+     grid-area: texto2;
+    
+    height:50%;
+    margin-top: -10%;
+    width: 60%;
+   margin-left: 15%;
+    background-color:#cd863f;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#foto5{
+     grid-area: foto5;
+
+    height: 100%;
+    margin-top: -13%;
+    width: 30%;
+    margin-left: 27%;
+}
+#texto3{
+     grid-area: texto3;
+     background-color:#cd863f;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height:70%;
+    margin-top: -10%;
+    width: 60%;
+   margin-left: 15%;
+}
+#foto6{
+     grid-area: foto6;
+  
+    height: 100%;
+    margin-top: -23%;
+    width: 50%;
+      margin-left: 30%;
+}
+#foto7{
+     grid-area: foto7;
+   
+    height: 100%;
+    margin-top: -23%;
+    width: 65%;
+    margin-left: -15%;
+}
+#texto4{
+     grid-area: texto4;
+   background-color:#cd863f;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height:60%;
+    margin-top: -10%;
+    width: 60%;
+   margin-left: 15%;
+}
+#mae{
+    height: 100%;
+    width: 70%; 
+    margin-left: 32.8%;
+}
+#mae2{
+    height: 100%;
+    width: 65%; 
+    margin-left: 4%;
+}
+#marielle{
+     font-size: 21px;
+     margin-left: 2%;
+     margin-top: -0.1%;
+}
+#zelador{
+       height: 100%;
+    width: 70%; 
+    margin-left: 15%;
+}
+#bill{
+      font-size: 21px;
+     margin-left: 2%;
+    
+}
+#fotografo{
+    height: 100%;
+    width: 85%; 
+    margin-left: 16%;
+}
+#fotografo2{
+    height: 100%;
+    width: 65%; 
+    margin-left:5%;
+}
+#jacob{
+   font-size: 21px;
+     margin-left: 2%;  
+}
+body {
+    background-color:#cd863fce;
+}
+#direcionar{
+      text-decoration: none;
+    font-size: 22px;
+    text-align: center;
+    list-style-position: inside;
+    color: black;
+    margin-left: 65%; 
+    margin-top: -20%;
+}
+@media (max-width: 500px) {
+    #container {
+        grid-template-columns: 2fr;
+        grid-template-areas: 
+            "titulo"
+            "foto1"
+            "foto2"
+            "texto1"
+            "foto3"
+            "foto4"
+            "texto2"
+            "foto5"
+            "texto3"
+            "foto6"
+            "foto7"
+            "texto4";
+              grid-template-rows: 200px 220px 250px 250px 210px  220px 250px 250px 220px; 
+    }
+#titulo{
+     grid-area: titulo;
+   background-color:#cd863f;
+     box-shadow: 10px 20px grey;
+   margin-left: 4%;
+  
+}
+h1{
+  text-align: center;
+ margin-top: 0.1%;
+ margin-left: -4%;
+}
+#foto1{
+     grid-area: foto1;
+    height: 100%;
+    margin-top: -20%;
+    width: 65%;
+    margin-left: 5%;
+}
+#rainha{
+    height: 100%;
+    width: 100%; 
+    margin-left: 15%;
+}
+#rainha2{
+    height: 100%;
+    width: 100%; 
+}
+#foto2{
+     grid-area: foto2;
+    height: 100%;
+    margin-top: -14%;
+    width: 65%;
+   margin-left: 17.8%;
+}
+  #texto1{
+     grid-area: texto1;
+  background-color:#cd863f;
+    height:65%;
+    margin-top: -6%;
+    width: 90%;
+   margin-left: 5%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}  
+#anya{
+     font-size: 22px;
+     margin-left: 2%;
+}
+#foto3{
+     grid-area: foto3;
+   
+    height: 100%;
+    margin-top: -19%;
+    width: 70%;
+      margin-left: 0%;
+}
+#foto4{
+     grid-area: foto4;
+    height: 100%;
+    margin-top: -15%;
+    width: 100%;
+    margin-left: 10%;
+}
+#texto2{
+     grid-area: texto2;
+    height:100%;
+    margin-top: -10%;
+    width: 90%;
+   margin-left: -0.0001%;
+  font-size: 20px;
+    background-color:#cd863f;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#foto5{
+     grid-area: foto5;
+
+    height: 100%;
+    margin-top: 2%;
+    width: 100%;
+    margin-left: 3%;
+}
+#texto3{
+     grid-area: texto3;
+     background-color:#cd863f;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height:96%;
+    margin-top: 7%;
+    width: 100%;
+   margin-left: -1%;
+}
+#foto6{
+     grid-area: foto6;
+  
+    height: 100%;
+    margin-top: 12%;
+    width: 100%;
+      margin-left: -5%;
+}
+#foto7{
+   display: none;
+}
+#texto4{
+     grid-area: texto4;
+   background-color:#cd863f;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height:65%;
+    margin-top: 20%;
+    width: 100%;
+   margin-left: 0.5%;
+}
+#mae{
+    height: 100%;
+    width: 70%; 
+    margin-left: 32.8%;
+}
+#mae2{
+    height: 100%;
+    width: 65%; 
+    margin-left: 4%;
+}
+#marielle{
+     font-size: 21px;
+     margin-left: 2%;
+     margin-top: -0.1%;
+}
+#zelador{
+       height: 100%;
+    width: 70%; 
+    margin-left: 15%;
+}
+#bill{
+      font-size: 21px;
+     margin-left: 2%;
+    
+}
+#fotografo{
+    height: 100%;
+    width: 85%; 
+    margin-left: 16%;
+}
+#fotografo2{
+    height: 100%;
+    width: 65%; 
+    margin-left:5%;
+}
+#jacob{
+   font-size: 21px;
+     margin-left: 2%;  
+}
+body {
+    background-color:#cd863fce;
+}
+#direcionar{
+      text-decoration: none;
+    font-size: 22px;
+    text-align: center;
+    list-style-position: inside;
+    color: black;
+    margin-left: 65%; 
+    margin-top: 5%;
+}
+}
